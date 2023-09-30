@@ -498,6 +498,7 @@ body{
     flex-direction: row;
 }
 .about-img img{
+    object-fit: cover;
     width: 100%;
     height:380px;
     padding: 30px;
