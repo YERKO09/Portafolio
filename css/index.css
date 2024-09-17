@@ -1,9 +1,3 @@
-/*!
-  * Item: Willy Wonka Theme
-  * Description: Personal Portfolio Website Template
-  * Author/Developer: Sujal
-  * Version: v1
-  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
@@ -14,11 +8,11 @@
 }
 ::-webkit-scrollbar{
     width: 4px;
-    color:#c70039;
+    color:#b0e717;
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #c70039; 
+    background: #b0e717; 
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
@@ -39,8 +33,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
   html{
-    background: #101010;
-    
+    background: #101010;  
   }
   #loader{
       display: flex;
@@ -205,10 +198,6 @@ body{
     cursor: pointer;
     transition: all .4s ease;
 }
-.logo img:hover{
-    opacity: 1;
-    transform: rotate(-45deg);
-}
 #navigation-bar img{
     height: 80px;
     position: absolute;
@@ -218,16 +207,16 @@ body{
     opacity: .8;
     transition: all .4s ease;
 }
-#navigation-bar img:hover{
+.logo img:hover, #navigation-bar img:hover{
     opacity: 1;
-    transform:rotate(-45deg);
+    transform: scale(1.1);
 }
 .header-image img{
     height: 100vh;
     float: right;
 }
 .header-image{
-    background-image: url(../images/WIN_20230803_12_55_13_Pro.jpg);
+    background-image: url(../images/Hotpot.png);
     background-color: #17171788;
     background-blend-mode: multiply;
     float: right;
@@ -394,8 +383,8 @@ body{
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #c70039;
-    opacity: 1;
+    background-color: #b0e717;
+    opacity: 0.5;
     animation: breakeranimate 2s linear;
     display: none;
     transition: all .4s ease;
@@ -414,7 +403,7 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #c70039;
+    color: #b0e717;
     transition: all .4s ease;
 }
 #about{
@@ -497,27 +486,31 @@ body{
     padding-right: 50px;
     flex-direction: row;
 }
-.about-img img{
-    object-fit: cover;
-    width: 100%;
-    height:380px;
-    padding: 30px;
-    border-radius: 40px;
-}
+
 .about-img {
     width: 550px;
-    height:auto;
+    height: auto;
     padding: 30px;
     padding-top: 10px;
     border-radius: 40px;
 }
+
+.about-img img{
+    object-fit: cover;
+    object-position: 0% 30%;
+    width: 100%;
+    height: 500px !important;
+    padding: 30px;
+    border-radius: 40px;
+}
+
 
 #about-content a{
     text-decoration: none;
     font-family: aileron;
     font-weight: 400;
     font-size: 35px;
-    color: #c70039;
+    color: #b0e717;
     transition: all .4s ease;
 }
 .cv {
@@ -525,10 +518,8 @@ body{
 }
 .cv a button{
     background: transparent;
-    border:none;
     padding: 15px 30px;
     color: whitesmoke;
-    background: #c70039;
     outline: none;
     font-size:20px;
     font-family: aileron;
@@ -578,11 +569,10 @@ body{
     padding:2.5%;
 }
 .service{
-    height:380px;
+    height:440px !important;
     width:28%;
     margin: 1.5%;
     background-color: #191919;
-    ;
     display: inline-block;
     box-shadow:0px 0px 25px rgb(0,0,0,.05);
     position: relative;
@@ -603,15 +593,15 @@ body{
     margin: 20px;
     border-radius: 30%;
     padding: 10px;
-    border: 0px solid #c70039;
-    background: #c70039;
-    box-shadow:0px 0px 0px 0px #c70039 ;
+    border: 0px solid #658608;
+    background: #009efa;
+    box-shadow:0px 0px 0px 0px #028db8 ;
     height:100px;
     transition: all .8s ease;
 }
 
 .service:hover .service-img img{
-    box-shadow:0px 0px 0px 400px #c70039 ;
+    box-shadow:0px 0px 0px 400px #112b3a ;
 }
 
 .service-description{
@@ -633,6 +623,51 @@ body{
     font-size: 16px;
     opacity: .8;
 }
+
+/*botón "Ver Certificado" */
+.ver-certificado button{
+    font-size: 16px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 10px 20px;
+    background:transparent;
+    color:#b0e717;
+    transition: all .4s ease;
+    outline: none;
+    margin: 20px;
+    border: 1.5px solid #b0e717;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+}
+.ver-certificado button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #79a500;
+    transition: all .7s ease;
+}
+.ver-certificado button:hover{
+    opacity: 1;
+    color:whitesmoke;
+}
+button:hover .index{
+    position: relative;
+    z-index: 4;
+}
+.ver-certificado button:hover::before{
+    opacity: 1;
+    width: 120%;
+}
+
+
 #skills{
     width: 100%;
     height:auto;
@@ -646,125 +681,44 @@ body{
     font-size: 45px;
     font-family: raleway;
     color: whitesmoke;
-    padding:10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 30px 10px;
     font-weight: 900;
 }
 .skills-content{
     height: auto;
-    width:100%;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    width: 100%;
+    margin: 20px 0px 80px 0px;
 }
-.skill-html{
-    height: auto;
-    width: 45%;
-    padding: 0%;
-    position: relative;
-    font-family: poppins;
-    color:whitesmoke;
+.logo-skill{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.marquee {
+    margin: 0px 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
     display: inline-block;
-    padding:1.5%;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
 }
-.skill-text{
-    width:80%;
-    position: relative;
-    height: 50px;
-}
-.html{
+
+.marquee-content img {
     display: inline-block;
-    position: absolute;
-    left: 5%;
-    top:30%;
+    margin-right: 40px;
 }
-.html-prog{
-   width:100%;
-   height:40px;
-   border-radius: 10px;
-   background: #191919;
-   box-shadow:0px 0px 25px rgb(0,0,0,.1);
-   position: relative;
-   overflow: hidden;
-}
-.html-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease;
-    width:90%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.js-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    font-family: poppins;
-    justify-content: center;
-    transition: all .4s ease;
-    width:90%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.bootstrap-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease;
-    width:80%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.php-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:50%;
-    border-radius: 10px;
-    background: #c70039;
-    transition: all .4s ease;
-}
-.jquery-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease;
-    width:40%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.git-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:50%;
-    border-radius: 10px;
-    transition: all .4s ease;
-    background: #c70039;
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .portfolio-header{
     height: auto;
@@ -823,7 +777,7 @@ padding-bottom: 40px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
-    color: #c70039;
+    color: #b0e717;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -840,11 +794,11 @@ padding-bottom: 40px;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#c70039;
+    color:#b0e717;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #c70039;
+    border: 1.5px solid #b0e717;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -859,14 +813,14 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #c70039;
+    background: #79a500;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
     opacity: 1;
     color:whitesmoke;
 }
- button:hover .index{
+button:hover .index{
      position: relative;
     z-index: 4;
 }
@@ -877,20 +831,20 @@ padding-bottom: 40px;
 .button{
     text-align: center;
 }
-    .portfolio-image img{
-        height: 400px;
-        width: 100%;
-        position: relative;
-    }
-    .portfolio-image{
-        height: 400px;
-        width: 40%;
-    }
+.portfolio-image img{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.portfolio-image{
+    height: 400px;
+    width: 40%;
+}
 .portfolio-image img::before{
     content: "";
     height: 100%;
     width: 100%;
-    background: #c70039;
+    background: #b0e717;
     opacity: .1;
     top: 0;
     left: 0;
@@ -991,7 +945,7 @@ padding-bottom: 40px;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #c70039;
+    background: #79a500;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
@@ -1174,7 +1128,7 @@ form button{
     font-family: poppins;
     font-size:20px;
     color: whitesmoke;
-    background:#BB0035;
+    background:#6e9600;
     opacity: .8;
     margin: 20px;
     cursor: pointer;
@@ -1406,7 +1360,7 @@ For devices with smaller width like mobile phone
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #c70039;
+        background-color: #b0e717;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1519,9 +1473,9 @@ For devices with smaller width like mobile phone
         height:80px;
         transition: all .8s ease;
     }
-    .skill{
+    /* .skill{
         width:80%;
-    }
+    } */
     .prog{
         height:30px;
     }
@@ -1574,7 +1528,7 @@ For devices with smaller width like mobile phone
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #c70039 ;
+                box-shadow:0px 0px 0px 0px #b0e717 ;
             }
             .portfolio-image img{
                 height: 300px;
@@ -1861,7 +1815,7 @@ for tabs and large phones
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #c70039;
+        background-color: #b0e717;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1990,9 +1944,9 @@ for tabs and large phones
         font-size: 15px;
         opacity: .8;
     }
-    .skill{
+    /* .skill{
         width:40%;
-    }
+    } */
     .prog{
         height:35px;
     }
@@ -2045,7 +1999,7 @@ for tabs and large phones
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #c70039 ;
+                box-shadow:0px 0px 0px 0px  ;
             }
             .portfolio-image img{
                 height: 380px;
@@ -2269,11 +2223,6 @@ for tabs and large phones
             
             
 }
-
-
-
-
-
 
 
 
