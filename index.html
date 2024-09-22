@@ -18,6 +18,8 @@
     <!-- bootstrap cdn-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/b4898d4284.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,10 +34,8 @@
         </div>
         <!--loader-end-->
         <!--link-screen-->
-        <div id="breaker">
-        </div>
-        <div id="breaker-two">
-        </div>
+        <div id="breaker"></div>
+        <div id="breaker-two"></div>
         <!--link-screen-->
         <!--Main-Section-->
         <!--Navigator-fullscreen-->
@@ -106,8 +106,7 @@
                 </div>
             </div>
             <!--header image-->
-            <div class="header-image">
-            </div>
+            <div class="header-image"></div>
             <!--header image end-->
         </div>
         <!--Header End-->
@@ -117,7 +116,7 @@
         <div id="about">
             <div class="color-changer">
                 <div class="color-panel">
-                    <img src="images/gear.png" alt="">
+                    <img src="images/gear.png" alt="config-theme-img">
                 </div>
                 <div class="color-selector">
                     <div class="heading">Color del Tema</div>
@@ -149,13 +148,12 @@
             <div id="about-content">
                 <div class="about-header">
                     Acerca de <span class="color">mí</span>
-                    <span class="header-caption">Un poco sobre <span class="color"><!--Aquí va texto-->mí </span></span>
+                    <span class="header-caption">Un poco sobre <span class="color">mí </span></span>
                 </div>
                 <div class="about-main">
-                    <div class="about-first-paragraph wow">
+                    <div class="about-first-paragraph">
                         <!--about description-->
-                        <span class="about-first-line">
-                            Soy
+                        <span class="about-first-line">Soy
                             <span class="color">Desarrollador Web</span>
                             Ubicado en Santiago, Chile. </span>
                         <br>
@@ -213,12 +211,12 @@
                     </div>
                 </div>
 
-                <div class="services-heading wow">
+                <div class="services-heading">
                     <span class="color">Cursos y </span> Certificaciones
                 </div>
 
                 <div class="services-content">
-                    <div class="service-one service wow">
+                    <div class="service-one service">
                         <div class="service-img">
                             <img src="images/diploma.gif" alt="service-one">
                         </div>
@@ -233,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service-two service wow">
+                    <div class="service-two service">
                         <div class="service-img">
                             <img src="images/responsive.gif" alt="service-one">
                         </div>
@@ -248,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service-three service wow">
+                    <div class="service-three service">
                         <div class="service-img">
                             <img src="images/coding.gif" alt="service-one">
                         </div>
@@ -265,12 +263,12 @@
                     </div>
                 </div>
 
-                <div class="services-heading wow">
+                <div class="services-heading">
                     <span class="color">Experiencia</span> Laboral
                 </div>
 
                 <div class="services-content">
-                    <div class="service-one service wow">
+                    <div class="service-one service">
                         <div class="service-img">
                             <img src="images/computer.gif" alt="service-one">
                         </div>
@@ -281,7 +279,7 @@
                         </div>
                     </div>
 
-                    <div class="service-three service wow">
+                    <div class="service-three service">
                         <div class="service-img">
                             <img src="images/user.gif" alt="service-one">
                         </div>
@@ -298,7 +296,7 @@
                 <div class="skills-header">
                     Mis <span class="color"> Skills</span>
                 </div>
-                <div class="skills-content" style="text-align: center;">
+                <div class="skills-content">
                     <div class="marquee">
                         <div class="marquee-content">
                             <img src="images/logo-skill/html.png" alt="html5-logo" class="logo-skill">
@@ -359,24 +357,75 @@
                 <span class="color"> Mi </span> Portafolio
                 <span class="header-caption"> Prototipos y Maquetas <span class="color"> (En Desafío Latam)</span></span>
             </div>
-            <div class="portafolio-content">
+            <div class="portafolio-content">                                  
                 <div class="proyecto">
-                    <a href="https://yerko09.github.io/IguanaPage" target="_blank">
+                    <a href="https://mercadolibros.netlify.app/libros">
                         <div class="img">
-                            <img src="images/iguana_page_cover.png" alt="vista previa Iguana Page">
-                            <div class="proyect-date">8 May,20</div>
+                            <img src="images/preview-proyectos/mercadolibros.png" alt="vista previa proyecto final - mercadolibros">
+                            <div class="proyect-date">07 AGO, 2024</div>
                         </div>
                         <div class="proyect-text">
-                            <h3>IguanaPage</h3>
-                            <p>Maqueta realizada con HTML, CSS y BOOTSTRAP. El objetivo de este ejercicio es practicar la alineación con flexbox utilizando BOOTSTRAP</p>
+                            <h3>Proyecto Final - <span class="color">Mercado Libros</span></h3>
+                            <a href="https://vimeo.com/manage/videos/996879784" target="_blank">
+                                <span class="proyect-video">Ver Video <i class="fa-solid fa-circle-play"></i></span>
+                            </a>
+                            <p>Aplicación FullStack responsiva, con deploy de base de datos (POSTGRESQL), servidor backend (EXPRESS) y aplicación cliente/frontend (REACT).
+                                La aplicación permite a los usuarios registrarse y loguearse con autenticación y validación de credenciales,
+                                además de un CRUD completo para agregar, editar y eliminar libros.
+                            </p>
                         </div>
                     </a>
                 </div>
                 <div class="proyecto">
+                    <a href="https://prueba-mamma-mia.netlify.app/">
+                        <div class="img">
+                            <img src="images/preview-proyectos/prueba-mamma-mia.png" alt="vista previa prueba-mamma-mia">
+                            <div class="proyect-date">11 MAR, 2024</div>
+                        </div>
+                        <div class="proyect-text">
+                            <h3>Prueba Mamma Mia!</h3>
+                            <p>Aplicación hecha con React Router para controlar rutas y redireccionamientos,
+                                Context API almacenar y modificar el estado global.
+                                La API es un archivo JSON con todos los datos de las diferentes pizzas.
+                                La aplicación tiene un carrito y una vista de detalle por cada pizza seleccionada.
+                                Se calcula el total y se muestra en los diferentes componentes.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://yerko09.github.io/Prueba---animaciones/">
+                        <div class="img">
+                            <img src="images/preview-proyectos/prueba_animaciones_css.png" alt="vista previa prueba_css">
+                            <div class="proyect-date">05 NOV, 2023</div>
+                        </div>
+                        <div class="proyect-text">
+                            <h3>Prueba Animaciones</h3>
+                            <p>Página web responsiva y visualmente atractiva utilizando Flexbox/CSS Grid con media querys para adaptar el contenido a diferentes dispositivos.
+                              Incluye un menú lateral adaptable a dispositivos móviles,
+                              una galería de imágenes con efectos de transiciones y transformaciones,
+                              y un footer informativo con enlaces a redes sociales.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://yerko09.github.io/fdsw-github/" target="_blank">
+                        <div class="img">
+                            <img src="./images/preview-proyectos/portafolio-bootstrap-cover.png" alt="vista previa portfolio bootstrap">
+                            <div class="proyect-date">06 OCT, 2023</div>
+                        </div>
+                        <div class="proyect-text">
+                            <h3>Portafolio Bootstrap</h3>
+                            <p>Este sitio es una plantilla modificada a partir de un repositorio de github</p>
+                        </div>
+                    </a>
+                </div>                 
+                <div class="proyecto">
                     <a href="https://yerko09.github.io/Cuppon" target="_blank">
                         <div class="img">
-                            <img src="images/cuppon_cover.png" alt="vista previa Cuppon">
-                            <div class="proyect-date">16 Jan,20</div>
+                            <img src="images/preview-proyectos/cuppon_cover.png" alt="vista previa Cuppon">
+                            <div class="proyect-date">01 SEP, 2023</div>
                         </div>
                         <div class="proyect-text">
                             <h3>Cuppon</h3>
@@ -387,64 +436,17 @@
                     </a>
                 </div>
                 <div class="proyecto">
-                    <a href="https://yerko09.github.io/fdsw-github/" target="_blank">
+                    <a href="https://yerko09.github.io/IguanaPage" target="_blank">
                         <div class="img">
-                            <img src="./images/portafolio-bootstrap-cover.png" alt="vista previa portfolio bootstrap">
-                            <div class="proyect-date">30 Nov,19</div>
+                            <img src="images/preview-proyectos/iguana_page_cover.png" alt="vista previa Iguana Page">
+                            <div class="proyect-date">25 AGO, 2023</div>
                         </div>
                         <div class="proyect-text">
-                            <h3>Portafolio Bootstrap</h3>
-                            <p>Este sitio es una plantilla modificada a partir de un repositorio de github</p>
+                            <h3>IguanaPage</h3>
+                            <p>Maqueta realizada con HTML, CSS y BOOTSTRAP. El objetivo de este ejercicio es practicar la alineación con flexbox utilizando BOOTSTRAP</p>
                         </div>
                     </a>
-                </div>
-                <div class="proyecto">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-four.jpg" alt="proyect-four">
-                            <div class="proyect-date">6 Jul,19</div>
-                        </div>
-                        <div class="proyect-text">
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam
-                                vitae,
-                                quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet
-                                corporis praesentium quae.
-                                Sed, quibusdam necessitatibus.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-five.jpg" alt="proyect-five">
-                            <div class="proyect-date">1 Jun,19</div>
-                        </div>
-                        <div class="proyect-text">
-                            <h3>Work From Home</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus
-                                rem
-                                dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut
-                                doloremque illum, soluta hic minus
-                                sint explicabo..</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-six.jpg" alt="proyect-six">
-                            <div class="proyect-date">28 Feb,19</div>
-                        </div>
-                        <div class="proyect-text">
-                            <h3>Business Trip</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum
-                                fuga ratione, unde,
-                                ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos
-                                ut rerum nam.</p>
-                        </div>
-                    </a>
-                </div>
+                </div>    
             </div>
             <div class="footer-container"></div>
         </div>
@@ -547,11 +549,13 @@
         </div>
         <!--contact end-->
     </div>
+
     <!--all the divisions-->
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
+
     <!-- efectos personalizados aquí -->
     <script src="js/particulas.js"></script>
 
@@ -559,6 +563,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Footer -->
     <script src="js/footer.js"></script>
 </body>
 
